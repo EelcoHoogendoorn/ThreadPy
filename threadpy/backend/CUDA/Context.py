@@ -15,6 +15,7 @@ import pycuda.tools
 def array_wrap(arr):
     """coerce object to be a wrapped array"""
     arr.__class__ = ndarray
+    return arr
 
 
 import scikits.cuda.fft as cu_fft
@@ -72,9 +73,6 @@ class Context(interface.Context):
     mangle cuda into a clean interface
     """
     def __init__(self, device=0):
-        #fft plan cache
-        self._plan_cache = {}
-
         drv.init()
 
         self.device = drv.Device(device)

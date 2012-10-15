@@ -1,3 +1,0 @@
-"""
-openCL wrapper
-"""

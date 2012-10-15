@@ -1,2 +1,2 @@
 
-from PySIMD import test
+from threadpy.test import main_test
