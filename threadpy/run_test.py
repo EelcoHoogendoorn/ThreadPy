@@ -1,0 +1,2 @@
+
+from PySIMD import test
