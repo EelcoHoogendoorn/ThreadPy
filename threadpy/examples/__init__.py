@@ -1,0 +1,3 @@
+"""
+several tutorial-like examples
+"""
